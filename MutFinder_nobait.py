@@ -1,5 +1,5 @@
 ##############################################################################################################
-# Python program: Finds mutations in individual mice using cyvcf2 focal data only (no bait) 
+# Python program: Finds unique variants for each sample in a VCF and outputs variant genotypic data 
 # Author: Jobran Chebib, August 2022 (based on March 2022; based on October 2019 version)
 # Build for: Python 2.7.5
 # Requires: Blas        $ sudo yum install blas
