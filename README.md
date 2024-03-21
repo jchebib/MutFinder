@@ -44,4 +44,4 @@ parser.add_argument("--start", dest="start", default=191000000, type=int, help="
 parser.add_argument("--finish", dest="finish", default=191002000, type=int, help="The end position in the range of desired sequences")
 
 **EXAMPLE USAGE:**
-> python MutFinder_allbait.py --chromosome NC_000067.7 --start 20000001 --finish 40000000 --max_impurity 49 --allele_balance_ratio 0.25 input.vcf.gz > output.txt
+> python MutFinder_allbait.py --chromosome NC_000067.7 --start 20000001 --finish 40000000 --max_impurity 25 --allele_balance_ratio 0.25 input.vcf.gz > output.txt
