@@ -6,13 +6,14 @@
 > Requires: Cython      $ sudo yum install Cython
 > Requires: cyvcf2      $ pip install cyvcf2
 > Requires: NumPy       $ pip install numpy
-> get dependencies
+
+**get dependencies**
 import argparse,sys
 from cyvcf2 import VCF
 import numpy as np
 np.set_printoptions(threshold=np.inf)
 
-> get argument values
+**get argument values**
 parser = argparse.ArgumentParser(description="ID mutations present in a VCF of a single starting genoytpe of MA", usage="MutFinder_cyvcf2_mus_bait.py [options] input_file.vcf(.gz)")
 parser.add_argument("vcf_file",help="The name of the vcf file")
 parser.add_argument("--min_QUAL", dest="min_QUAL", default=90, type=int, help="The min QUAL for a site to be considered as a candidate mutational site")
